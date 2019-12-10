@@ -1,0 +1,15 @@
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Business.dll.config
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Business.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Business.pdb
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\EntityFramework.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Data.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Data.pdb
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\ShoesApp.Data.dll.config
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\EntityFramework.xml
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\obj\Debug\ShoesApp.Business.csprojAssemblyReference.cache
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\obj\Debug\ShoesApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\obj\Debug\ShoesApp.Business.csproj.CopyComplete
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\obj\Debug\ShoesApp.Business.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Business\obj\Debug\ShoesApp.Business.pdb
