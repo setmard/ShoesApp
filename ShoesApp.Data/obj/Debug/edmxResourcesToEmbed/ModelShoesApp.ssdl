@@ -16,12 +16,12 @@
       <PropertyRef Name="IdCatalog" />
     </Key>
     <Property Name="IdCatalog" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="IdProvider" Type="int" Nullable="false" />
-    <Property Name="Season" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="StarActiveDate" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="EndActiveDate" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="DateUpdate" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="IsEnabled" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IdProvider" Type="int" />
+    <Property Name="Season" Type="nvarchar(max)" />
+    <Property Name="StarActiveDate" Type="datetime" />
+    <Property Name="EndActiveDate" Type="datetime" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="IsEnabled" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="CatColors">
     <Key>
@@ -39,10 +39,10 @@
     </Key>
     <Property Name="IdProvider" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="IsEnabled" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="DateUpdate" Type="datetime" Nullable="false" />
-    <Property Name="Url" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="IsEnabled" Type="bit" />
+    <Property Name="DateUpdate" Type="datetime" />
+    <Property Name="Url" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="CatRatings">
     <Key>
@@ -113,7 +113,7 @@
     <Property Name="IdImageProduct" Type="int" Nullable="false" />
     <Property Name="Decription" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Image" Type="varbinary(max)" Nullable="false" />
-    <Property Name="DateUpdate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateUpdate" Type="datetime" />
     <Property Name="IsEnabled" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Products">
@@ -125,7 +125,7 @@
     <Property Name="IdColor" Type="int" />
     <Property Name="IdBrand" Type="int" />
     <Property Name="IdProvider" Type="int" />
-    <Property Name="IdCatalog" Type="int" Nullable="false" />
+    <Property Name="IdCatalog" Type="int" />
     <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
@@ -134,8 +134,8 @@
     <Property Name="PriceClient" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="PriceMember" Type="decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="IsEnabled" Type="bit" Nullable="false" />
-    <Property Name="Keywords" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="DateUpdate" Type="datetime" Nullable="false" />
+    <Property Name="Keywords" Type="nvarchar(max)" />
+    <Property Name="DateUpdate" Type="datetime" />
   </EntityType>
   <EntityType Name="Qualification">
     <Key>
@@ -216,7 +216,7 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CatCatalogsCatProviders">
-    <End Role="CatProviders" Type="Self.CatProviders" Multiplicity="1" />
+    <End Role="CatProviders" Type="Self.CatProviders" Multiplicity="0..1" />
     <End Role="CatCatalogs" Type="Self.CatCatalogs" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CatProviders">
@@ -240,7 +240,7 @@ warning 6002: The table/view 'DataProducts.sys.database_firewall_rules' does not
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CatCatalogsProducts">
-    <End Role="CatCatalogs" Type="Self.CatCatalogs" Multiplicity="1" />
+    <End Role="CatCatalogs" Type="Self.CatCatalogs" Multiplicity="0..1" />
     <End Role="Products" Type="Self.Products" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CatCatalogs">

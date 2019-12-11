@@ -1,0 +1,11 @@
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\ShoesApp.Entities.dll.config
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\ShoesApp.Entities.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\ShoesApp.Entities.pdb
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.csproj.CopyComplete
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.dll
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.pdb

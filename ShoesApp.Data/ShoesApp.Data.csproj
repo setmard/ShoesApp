@@ -54,102 +54,99 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CatBrands.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatCatalogs.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatColors.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatProviders.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatRatings.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatSizes.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatTypeDetails.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="CatTypeProduct.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Comments.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="database_firewall_rules.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="database_firewall_rules1.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database_firewall_rules2.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dataBl.cs" />
     <Compile Include="DetailProduct.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ImagesProduct.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelShoesApp.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelShoesApp.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelShoesApp.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelShoesApp.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelShoesApp.edmx</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Qualification.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEMD_SearchById_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEMD_SearchByName_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SEMD_SearchProducts_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShoesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoesModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="SimilarProduct.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SizeForProduct.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>ModelShoesApp.tt</DependentUpon>
+      <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <EntityDeploy Include="ModelShoesApp.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelShoesApp.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelShoesApp.edmx.diagram">
-      <DependentUpon>ModelShoesApp.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ModelShoesApp.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelShoesApp.edmx</DependentUpon>
-      <LastGenOutput>ModelShoesApp.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelShoesApp.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelShoesApp.edmx</DependentUpon>
-      <LastGenOutput>ModelShoesApp.cs</LastGenOutput>
-    </Content>
+    <EntityDeploy Include="ShoesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ShoesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ShoesModel.edmx.diagram">
+      <DependentUpon>ShoesModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -159,6 +156,18 @@
       <Project>{1bb6ed0e-ca54-4a90-8982-7dbe5b899448}</Project>
       <Name>ShoesApp.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ShoesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShoesModel.edmx</DependentUpon>
+      <LastGenOutput>ShoesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ShoesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ShoesModel.edmx</DependentUpon>
+      <LastGenOutput>ShoesModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

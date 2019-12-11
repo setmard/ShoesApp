@@ -18,12 +18,12 @@
       <PropertyRef Name="IdCatalog" />
     </Key>
     <Property Name="IdCatalog" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="IdProvider" Type="Int32" Nullable="false" />
-    <Property Name="Season" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="StarActiveDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="EndActiveDate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="DateUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsEnabled" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdProvider" Type="Int32" />
+    <Property Name="Season" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StarActiveDate" Type="String" />
+    <Property Name="EndActiveDate" Type="String" />
+    <Property Name="DateUpdate" Type="String" />
+    <Property Name="IsEnabled" Type="String" Nullable="false" />
     <NavigationProperty Name="CatProviders" Relationship="Self.FK_CatCatalogsCatProviders" FromRole="CatCatalogs" ToRole="CatProviders" />
     <NavigationProperty Name="ImagesProduct" Relationship="Self.FK_CatCatalogsImagesProduct" FromRole="CatCatalogs" ToRole="ImagesProduct" />
     <NavigationProperty Name="Products" Relationship="Self.FK_CatCatalogsProducts" FromRole="CatCatalogs" ToRole="Products" />
@@ -45,10 +45,10 @@
     </Key>
     <Property Name="IdProvider" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsEnabled" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="DateUpdate" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnabled" Type="String" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+    <Property Name="Url" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="CatCatalogs" Relationship="Self.FK_CatCatalogsCatProviders" FromRole="CatProviders" ToRole="CatCatalogs" />
     <NavigationProperty Name="Products" Relationship="Self.FK_ProductsCatProviders" FromRole="CatProviders" ToRole="Products" />
   </EntityType>
@@ -134,7 +134,7 @@
     <Property Name="IdImageProduct" Type="Int32" Nullable="false" />
     <Property Name="Decription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
-    <Property Name="DateUpdate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DateUpdate" Type="String" />
     <Property Name="IsEnabled" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="CatBrands" Relationship="Self.FK_CatBrandsImagesProduct" FromRole="ImagesProduct" ToRole="CatBrands" />
     <NavigationProperty Name="CatCatalogs" Relationship="Self.FK_CatCatalogsImagesProduct" FromRole="ImagesProduct" ToRole="CatCatalogs" />
@@ -149,7 +149,7 @@
     <Property Name="IdColor" Type="Int32" />
     <Property Name="IdBrand" Type="Int32" />
     <Property Name="IdProvider" Type="Int32" />
-    <Property Name="IdCatalog" Type="Int32" Nullable="false" />
+    <Property Name="IdCatalog" Type="Int32" />
     <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Nombre" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
@@ -158,8 +158,8 @@
     <Property Name="PriceClient" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="PriceMember" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
     <Property Name="IsEnabled" Type="Boolean" Nullable="false" />
-    <Property Name="Keywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="DateUpdate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Keywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
     <NavigationProperty Name="CatBrands" Relationship="Self.FK_CatBrandsProducts" FromRole="Products" ToRole="CatBrands" />
     <NavigationProperty Name="CatCatalogs" Relationship="Self.FK_CatCatalogsProducts" FromRole="Products" ToRole="CatCatalogs" />
     <NavigationProperty Name="CatColors" Relationship="Self.FK_CatColorsProducts" FromRole="Products" ToRole="CatColors" />

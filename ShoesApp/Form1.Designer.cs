@@ -30,13 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cboxId = new System.Windows.Forms.ComboBox();
-            this.cboxName = new System.Windows.Forms.ComboBox();
             this.btnFindId = new System.Windows.Forms.Button();
             this.btnFindName = new System.Windows.Forms.Button();
             this.ShoesList = new System.Windows.Forms.DataGridView();
             this.BtnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.tBid = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.ShoesList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,22 +63,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Name";
             // 
-            // cboxId
-            // 
-            this.cboxId.FormattingEnabled = true;
-            this.cboxId.Location = new System.Drawing.Point(126, 50);
-            this.cboxId.Name = "cboxId";
-            this.cboxId.Size = new System.Drawing.Size(156, 28);
-            this.cboxId.TabIndex = 2;
-            // 
-            // cboxName
-            // 
-            this.cboxName.FormattingEnabled = true;
-            this.cboxName.Location = new System.Drawing.Point(126, 104);
-            this.cboxName.Name = "cboxName";
-            this.cboxName.Size = new System.Drawing.Size(156, 28);
-            this.cboxName.TabIndex = 3;
-            // 
             // btnFindId
             // 
             this.btnFindId.Location = new System.Drawing.Point(307, 46);
@@ -82,6 +71,7 @@
             this.btnFindId.TabIndex = 4;
             this.btnFindId.Text = "Find";
             this.btnFindId.UseVisualStyleBackColor = true;
+            this.btnFindId.Click += new System.EventHandler(this.btnFindId_Click);
             // 
             // btnFindName
             // 
@@ -95,6 +85,12 @@
             // ShoesList
             // 
             this.ShoesList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ShoesList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Title,
+            this.Name,
+            this.Description,
+            this.Price});
             this.ShoesList.Location = new System.Drawing.Point(34, 172);
             this.ShoesList.Name = "ShoesList";
             this.ShoesList.RowTemplate.Height = 28;
@@ -119,22 +115,61 @@
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // tBid
+            // 
+            this.tBid.Location = new System.Drawing.Point(126, 50);
+            this.tBid.Name = "tBid";
+            this.tBid.Size = new System.Drawing.Size(156, 26);
+            this.tBid.TabIndex = 9;
+            // 
+            // tbName
+            // 
+            this.tbName.Location = new System.Drawing.Point(126, 109);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(156, 26);
+            this.tbName.TabIndex = 10;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Title
+            // 
+            this.Title.HeaderText = "Title";
+            this.Title.Name = "Title";
+            // 
+            // Name
+            // 
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 516);
+            this.Controls.Add(this.tbName);
+            this.Controls.Add(this.tBid);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.BtnEdit);
             this.Controls.Add(this.ShoesList);
             this.Controls.Add(this.btnFindName);
             this.Controls.Add(this.btnFindId);
-            this.Controls.Add(this.cboxName);
-            this.Controls.Add(this.cboxId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ShoesList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -145,13 +180,18 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cboxId;
-        private System.Windows.Forms.ComboBox cboxName;
         private System.Windows.Forms.Button btnFindId;
         private System.Windows.Forms.Button btnFindName;
         private System.Windows.Forms.DataGridView ShoesList;
         private System.Windows.Forms.Button BtnEdit;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox tBid;
+        private System.Windows.Forms.TextBox tbName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Title;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }
 }
 
