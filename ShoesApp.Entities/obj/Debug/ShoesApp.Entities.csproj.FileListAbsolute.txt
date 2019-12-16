@@ -9,3 +9,4 @@ C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entiti
 C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.csproj.CopyComplete
 C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.dll
 C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.pdb
+C:\Users\Curso\source\repos\ShoesApp\ShoesApp.Entities\obj\Debug\ShoesApp.Entities.csprojAssemblyReference.cache

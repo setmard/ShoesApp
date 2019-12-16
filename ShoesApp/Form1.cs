@@ -22,12 +22,33 @@ namespace ShoesApp
 
         }
 
+        private void btnFindName_Click(object sender, EventArgs e)
+        {
+            var name = new ShoesApp.Business.Manager();
+            var nm = tbName.Text;
+            
+            var all = name.searchByName(nm);
+
+            ShoesList.Rows.Clear();
+            foreach (var item in all)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Id });
+                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Title });
+                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Nombre });
+                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.Description });
+                row.Cells.Add(new DataGridViewTextBoxCell { Value = item.PriceClient });
+                ShoesList.Rows.Add(row);
+            }
+        }
+
         private void btnFindId_Click(object sender, EventArgs e)
         {
             var a = new ShoesApp.Business.Manager();
-            var c = int.Parse(tBid.Text);
+            int nid2;
+            var nid = int.TryParse(tBid.Text, out nid2);
             var n = tbName.Text;
-            var b = a.SearchS(c, n);
+            var b = a.SearchS(nid2);
 
             ShoesList.Rows.Clear();
             foreach (var item in b)
@@ -41,5 +62,14 @@ namespace ShoesApp
                 ShoesList.Rows.Add(row);
             }
         }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            Form2 fr2 = new Form2();
+            fr2.ShowDialog();
+            
+        }
+
+       
     }
 }

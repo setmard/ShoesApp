@@ -53,6 +53,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACOB_GetColors_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACOB_GetSizes_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ACOB_SearchByIdOrName_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ADER1_SearchProducts_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AVHM_BusquedaID_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AVHM_BusquedaNombre_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AVHM_MostrarProducts_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BRTV_SearchID_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CAOE_BUSCAR_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="CatBrands.cs">
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
@@ -90,10 +117,61 @@
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="dataBl.cs" />
+    <Compile Include="dena_sp_BusquedaProdId_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dena_sp_BusquedaProdNom_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dena_sp_MostrarTodo_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="DetailProduct.cs">
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="eumc1_getAllProviders_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="eumc1_getProductByIdOrName_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASV1_FilterByTitle_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FASV1_GetAllProducts_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ImagesProduct.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JEVJ1_BuscaProductoPorID_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JEVJ1_BuscaProductoPorNombre_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JEVJ1_MuestraProductos_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JRCV1_SearchShoesProduct_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LFGC1_AllProducts_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LFGC1_SearchProductID_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LFGC1_SearchProductName_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPVI_SEARCH_ALL_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPVI_SEARCH_ID_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MPVI_SEARCH_NOMBRE_Result.cs">
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Products.cs">
@@ -127,10 +205,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ShoesModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Show_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="SimilarProduct.cs">
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="SizeForProduct.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>ShoesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
       <DependentUpon>ShoesModel.tt</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
